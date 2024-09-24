@@ -5,7 +5,7 @@ export default function Hero() {
     <div
       className="min-h-screen flex flex-col gap-10
     items-center justify-center text-center max-w-[700] 
-    w-full mx-auto"
+    w-full mx-auto p4"
     >
       <div className="flex flex-col gap-4">
         <p>ALL IT TAKES IS</p>
