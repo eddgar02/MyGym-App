@@ -21,11 +21,18 @@ function Header(props) {
   );
 }
 
-export default function Generator() {
+export default function Generator(props) {
+  const {
+    muscles,
+    setMuscles,
+    poison,
+    setPoison,
+    goal,
+    setGoal,
+    updateWorkout,
+  } = props;
   const [showModal, setShowModal] = useState(false);
-  const [poison, setPoison] = useState("individual");
-  const [muscles, setMuscles] = useState([]);
-  const [goal, setGoal] = useState("strength_power");
+
   //let showModal = false;
 
   function updateMuscles(muscleGroup) {
@@ -97,7 +104,7 @@ export default function Generator() {
             <p className="capitalize">
               {muscles.length == 0 ? "Select muscle groups" : muscles.join(" ")}
             </p>
-            <i class="fa-solid absolute right-3 top-1/2 -translate-y-1/2 fa-caret-down"></i>
+            <i className="fa-solid absolute right-3 top-1/2 -translate-y-1/2 fa-caret-down"></i>
           </button>
           {showModal && (
             <div className="flex flex-col px-3 pb-3">
@@ -148,7 +155,7 @@ export default function Generator() {
             );
           })}
         </div>
-        <Button text={"Get Workout"}></Button>
+        <Button func={updateWorkout} text={"Get Workout"}></Button>
       </SectionWrapper>
     </div>
   );

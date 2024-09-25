@@ -1,1 +1,3 @@
-export function generateWorkout() {}
+export function generateWorkout() {
+  console.log("hi");
+}
