@@ -19,7 +19,12 @@ export default function Hero() {
         consistent. I need to be consistent in going to the gym and eating the
         right foods.{" "}
       </p>
-      <Button text={"Accept & Begin"}></Button>
+      <Button
+        func={() => {
+          window.location.href = "#generate";
+        }}
+        text={"Accept & Begin"}
+      ></Button>
     </div>
   );
 }

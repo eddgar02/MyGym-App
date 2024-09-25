@@ -64,6 +64,7 @@ export default function Generator(props) {
   return (
     <div className="min-h-screen ">
       <SectionWrapper
+        id={"generate"}
         header={"generate your workout"}
         title={["It's ", "Time", "!"]}
       >
@@ -137,7 +138,7 @@ export default function Generator(props) {
           title={"Choose focus"}
           description={"Select your ultimate objective."}
         />
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {Object.keys(SCHEMES).map((scheme, schemeIndex) => {
             return (
               <button
