@@ -6,7 +6,7 @@ html {
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Newsreader", serif;
 }
 
 span {
@@ -15,10 +15,18 @@ span {
 }
 
 .blueShadow {
-  box-shadow: 3px 3px 00 #60a5fa;
+  box-shadow: 3px 3px 00 #315684;
 }
 
 .blueShadow:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 00 #60a5fa;
+  box-shadow: 6px 6px 00 #2cdc93;
+}
+
+.back {
+  background-color: #eaf2f4;
+  color: #222222;
+}
+.mys:hover {
+  transform: translate(-3px, -3px);
 }

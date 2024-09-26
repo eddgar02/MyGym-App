@@ -82,8 +82,8 @@ export default function Generator(props) {
                   setPoison(type);
                 }}
                 className={
-                  "bg-slate-950 border border-blue-400 duration-200 px-4 hover:border-blue-600 py-3 rounded-lg" +
-                  (type === poison ? " border-blue-600" : " border-blue-400")
+                  "bg-slate-150 border border-green-400 duration-200 px-4 hover:border-green-600 mys duration-200 py-3 rounded-lg" +
+                  (type === poison ? " border-green-600" : " border-green-400")
                 }
                 key={typeIndex}
               >
@@ -97,12 +97,12 @@ export default function Generator(props) {
           title={"What Muscles?"}
           description={"Select the muscles you want to work on."}
         />
-        <div className="bg-slate-950 py-3 border border-solid border-blue-400 rounded-lg flex flex-col">
+        <div className="bg-slate-150 py-3 border border-solid border-green-400 rounded-lg flex flex-col">
           <button
             onClick={toggleModal}
             className="relative p-3 flex items-center justify-center"
           >
-            <p className="capitalize">
+            <p className="capitalize text-xl">
               {muscles.length == 0 ? "Select muscle groups" : muscles.join(" ")}
             </p>
             <i className="fa-solid absolute right-3 top-1/2 -translate-y-1/2 fa-caret-down"></i>
@@ -120,8 +120,8 @@ export default function Generator(props) {
                     }}
                     key={muscleGroupIndex}
                     className={
-                      "hover:text-blue-400 duration-200 " +
-                      (muscles.includes(muscleGroup) ? " text-blue-400" : " ")
+                      "hover:text-green-400 duration-200 " +
+                      (muscles.includes(muscleGroup) ? " text-green-400" : " ")
                     }
                   >
                     <p className="uppercase">
@@ -146,8 +146,8 @@ export default function Generator(props) {
                   setGoal(scheme);
                 }}
                 className={
-                  "bg-slate-950 border border-blue-400 duration-200 px-4 hover:border-blue-600 py-3 rounded-lg" +
-                  (scheme === goal ? " border-blue-600" : " border-blue-400")
+                  "bg-slate-150 border border-green-400 duration-200 px-4 hover:border-green-600 mys duration-200 py-3 rounded-lg" +
+                  (scheme === goal ? " border-green-600" : " border-green-400")
                 }
                 key={schemeIndex}
               >
